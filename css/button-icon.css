@@ -1,0 +1,13 @@
+.button-icon{
+    display: inline-block;
+    padding: 0.625rem;
+    border-radius: 0.25rem;
+    border: 0.125rem solid var(--primary);
+    background: var(--white);
+    text-decoration: none;
+}
+
+.button-icon img{
+    vertical-align: middle;
+    /* esto se hace para que el button no intente alinearse con el baseline, haciendose mas grande. esto sucede siempre que colocamos una imagen dentro de un elemento y con vertical-align: middle lo solucionamos */
+}
