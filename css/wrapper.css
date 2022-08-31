@@ -3,4 +3,7 @@
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }

@@ -1,4 +1,4 @@
-.project-description{
+.project-introduction{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -8,7 +8,7 @@
     gap: 24px;
 }
 
-.project-description h1{
+.project-introduction h1{
     font: var(--headline5);
     margin: 0;
     font-weight: 400;
@@ -17,7 +17,73 @@
     gap: 24px;
 }
 
-.project-description h1 span:nth-of-type(2){
+.project-introduction h1 span:nth-of-type(2){
     display: block;
     font: var(--headline5);
+}
+
+
+
+.project-description{
+    gap: 16px;
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+}
+
+.project-description p{
+    margin: 0;
+
+}
+
+/* .project-description img{
+    border: 1px solid green;
+    max-inline-size: 100%;
+    block-size: auto;
+} */
+
+.description-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-block-start: 20px;
+}
+
+.project-title{
+    align-self: flex-start;
+    background: var(--primary);
+    color: var(--white);
+    font: var(--headline5);
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    box-shadow: -4px 4px 0 var(--white);
+    text-decoration: none;
+    margin-inline-start: 4px;
+}
+
+@media screen and (min-width:768px){
+    .project-description{
+        display: flex;
+        align-items: center;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+
+    .project-description:nth-child(odd) .description-image{
+        order: 2;
+        flex: 1;
+    }
+    .description-image{
+        text-align: center;
+    }
+
+    .description-text{
+        margin-block-start: 0;
+        flex: 1;
+    }
+
+    .description-image img{
+        height:320px;
+    }
 }
