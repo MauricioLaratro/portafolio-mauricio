@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Jaume</title>
+    <title>Portafolio de Mauricio</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +14,25 @@
     <div class="wrapper">
         <header class="header">
             <img src="./images/logo.png" width="70" height="20" alt="Logo muy bonito">
-            <button class="button">Curriculum</button>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#main">Hola</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Hablemos</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="https://www.linkedin.com/in/mauriciojavierlaratro/" class="button">
+                Linkedin
+            </a>
         </header>
     
-        <section class="hero">
+        <section class="hero" id="main">
             <div class="hero-image">
                 <img src="./images/cv-image.jpg" width="328" height="330" alt="Fotografia de Mauricio">
             </div>
@@ -27,7 +42,7 @@
                     <span>Soy Mauricio</span>
                 </h1>
                 <p>
-                    Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.
+                    Frontend Developer que le apasiona afrontar retos que fomenten el crecimiento profesional.
                 </p>
                 <div class="hero-social">
                     <a class="button-icon" href="tel:+5493764653064">
@@ -36,10 +51,22 @@
                     <img src="./icons/icon-important_mail.svg" alt="Icono Mail"></a>
                     <a class="button-icon" href="https://www.instagram.com/mauriciolaratro/">
                     <img src="./icons/icon-instagram.svg" alt="Icono de Instagram"></a>
+                    <a class="button-icon" href="https://github.com/MauricioLaratro">
+                    <img src="./icons/icon-github.svg" alt="Icono de Github"></a>
                 </div>
-                <a href="" class="button">Descargar Curriculum</a>
+                <a href="/" class="button">Descargar Curriculum</a>
             </div>
         </section>
+
+        <div class="project" id="projects">
+            <div class="project-description">
+                <h1>
+                    <span>A lo largo de mi carrera como Frontend, he adquirido experiencia trabajando en proyectos retadores e increíbles</span>
+                    <span>Aquí hay algunos que me gustaría compartir.</span>
+                </h1>
+                <i aria-hidden="true"><img src="./icons/arrow-down.svg" alt="flecha hacia abajo"></i>
+            </div>
+        </div>
     </div>
 </body>
 </html>

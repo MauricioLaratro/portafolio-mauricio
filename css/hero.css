@@ -9,7 +9,9 @@
 }
 
 .hero-social{
+    display: flex;
     padding-block-end: 1.5rem;
+    gap: 1rem;
 }
 
 .hero-image{
@@ -28,4 +30,28 @@
 .hero h1 span:first-child{
     font: var(--headline5);
     display: block;
+}
+
+@media screen and (min-width: 768px){
+    .hero{
+        display: flex;
+        gap: 2rem;
+    }
+    .hero-description{
+        order: 1;
+        max-inline-size: 450px;
+    }
+    .hero-image{
+        order: 2;
+        flex: 1;
+        text-align: end;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .hero-image img{
+        inline-size: 500px;
+        block-size: 504px;
+    }
 }

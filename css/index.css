@@ -3,6 +3,8 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./wrapper.css";
+@import "./menu.css";
+@import "./project.css";
 
 :root{
     --baseFont: 'Poppins', sans-serif;
@@ -15,11 +17,10 @@
     --body2: normal .875rem/1.375rem var(--baseFont);
     --button: bold .875rem/1.375rem var(--baseFont);
     --caption: normal .75rem/1.1875rem var(--baseFont);
-    --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%) , linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
-    --primary: #310A90;
-    --green: #42E2B8;
+    --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #E3CAA5 0%, rgba(255, 255, 255, 0) 100%) , linear-gradient(135deg, #FFFBE9 0%, #CEAB90 100%);
+    --primary: #AD8B73;
+    --lightblue: #B7CADB;
     --white: white;
-    /* font-size: 10px; */
 }
 
 .body{

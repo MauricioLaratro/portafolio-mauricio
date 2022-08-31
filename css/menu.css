@@ -1,0 +1,22 @@
+.menu {
+    display: none;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: var(--primary);
+    font: var(--button);
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px){
+    .menu{
+        display: block;
+    }
+}
