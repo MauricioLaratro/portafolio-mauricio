@@ -11,28 +11,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-    <div class="wrapper">
-        <header class="header">
-            <img src="./images/logo.png" width="70" height="20" alt="Logo muy bonito">
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="#main">Hola</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Hablemos</a>
-                    </li>
-                </ul>
-            </nav>
-            <a target="_blank" href="https://www.linkedin.com/in/mauriciojavierlaratro/" class="button">
-                Linkedin
-            </a>
-        </header>
-    
-        <section class="hero" id="main">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <img src="./images/logo-mauricio.png" width="120" height="20" alt="Logo muy bonito">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#main">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#form">Hablemos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a target="_blank" href="https://www.linkedin.com/in/mauriciojavierlaratro/" class="button">
+                    Linkedin
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">    
+        <section aria-label="main" class="hero" id="main">
             <div class="hero-image">
                 <img src="./images/cv-image.jpg" width="328" height="330" alt="Fotografia de Mauricio">
             </div>
@@ -44,7 +47,7 @@
                 <p>
                     Frontend Developer que le apasiona afrontar retos que fomenten el crecimiento profesional.
                 </p>
-                <div class="hero-social">
+                <div class="social">
                     <a class="button-icon" href="tel:+5493764653064">
                     <img src="./icons/icon-phone.svg" alt="Icono de telefono"></a>
                     <a class="button-icon" href="mailto:mauriciolaratro@gmial.com">
@@ -54,7 +57,7 @@
                     <a target="_blank" class="button-icon" href="https://github.com/MauricioLaratro">
                     <img src="./icons/icon-github.svg" alt="Icono de Github"></a>
                 </div>
-                <a href="/" target="_blank" class="button">Descargar Curriculum</a>
+                <a href="./archives/MAURICIO-LARATRO.pdf" target="_blank" class="button">Descargar Curriculum</a>
             </div>
         </section>
 
@@ -67,34 +70,95 @@
         </div>
 
         <div class="project-description">
+            <a target="_blank" class="title" href="https://mauriciolaratro.github.io/my-spotifu/index.html">Spotifu</a>
             <div class="description-image">
-                <img src="./images/spotifu.png"  height="167" alt="Imagen del proyecto Spotifu">
-            </div>
-            <div class="description-text">
-                <a target="_blank" class="project-title" href="https://mauriciolaratro.github.io/my-spotifu/index.html">Spotifu</a>
-                <p> Proyecto inspirado en la plataforma de streaming musical mas reconocida. <br> 
-                    Interfaz creada desde 0, utilizando: html5 y css (flexbox layout).
-                </p>
-                <a target="_blank" href="https://github.com/MauricioLaratro/my-spotifu" class="button is-secondary"> Ver Código</a>
-                <a target="_blank" href="https://mauriciolaratro.github.io/my-spotifu/index.html" class="button">Ver Proyecto</a>
+                <img src="./images/spotifu.png" height="167" alt="Imagen del proyecto Spotifu">
+                <div class="description-text">
+                    <p> Proyecto inspirado en la plataforma de streaming musical mas reconocida. <br>
+                        Cuenta con Responsive Design. <br>
+                        Interfaz creada desde 0, utilizando: HTML y CSS (flexbox layout).
+                    </p>
+                    <a target="_blank" href="https://github.com/MauricioLaratro/my-spotifu" class="button is-secondary"> Ver Código</a>
+                    <a target="_blank" href="https://mauriciolaratro.github.io/my-spotifu/index.html" class="button">Ver Proyecto</a>
+                </div>
             </div>
         </div>
 
         <div class="project-description">
+            <a target="_blank" class="title" href="https://mauriciolaratro.github.io/curso-esencial-html-css-logical/#elemento-2">Blog Personal</a>
             <div class="description-image">
-                <img src="./images/spotifu.png"  height="167" alt="Imagen del proyecto Spotifu">
-            </div>
-            <div class="description-text">
-                <a target="_blank" class="project-title" href="https://mauriciolaratro.github.io/my-spotifu/index.html">Spotifu</a>
-                <p> Proyecto inspirado en la plataforma de streaming musical mas reconocida. <br> 
-                    Interfaz creada desde 0, utilizando: html5 y css (flexbox layout).
-                </p>
-                <a target="_blank" href="https://github.com/MauricioLaratro/my-spotifu" class="button is-secondary"> Ver Código</a>
-                <a target="_blank" href="https://mauriciolaratro.github.io/my-spotifu/index.html" class="button">Ver Proyecto</a>
+                <img src="./images/blog-personal.png" height="167" alt="Imagen del proyecto Spotifu">
+                <div class="description-text">
+                    <p> Proyecto en el que se creo la estructura basica de un Blog personal. <br> 
+                        utilizando: HTML y CSS.
+                    </p>
+                    <a target="_blank" href="https://github.com/MauricioLaratro/curso-esencial-html-css-logical" class="button is-secondary"> Ver Código</a>
+                    <a target="_blank" href="https://mauriciolaratro.github.io/curso-esencial-html-css-logical/#elemento-2" class="button">Ver Proyecto</a>
+                </div>
             </div>
         </div>
 
+        <form class="form" id="form" action="https://formspree.io/f/mzbwdrnk" method="POST">
+            <h2 class="title">Hablemos</h2>
+            <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto.</p>
 
+            <label for="form-name">
+                Nombre completo
+                <input required name="name" id="form-name" type="text" placeholder="Juan Lucas López">
+            </label>
+            <label for="form-email">
+                Correo electrónico
+                <input required name="email" id="form-email" type="email" placeholder="Email">
+            </label>
+            <label for="form-message">
+                Mensaje
+                <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="10"></textarea>
+            </label>
+            <button class="button" type="submit">Enviar mensaje</button>
+        </form>
+
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src="./images/logo-mauricio.png" width="120" height="20" alt="Logo muy bonito">
+            </div>
+            <div class="social">
+                <a class="button-icon" href="tel:+5493764653064">
+                <img src="./icons/icon-phone.svg" alt="Icono de telefono"></a>
+                <a class="button-icon" href="mailto:mauriciolaratro@gmial.com">
+                <img src="./icons/icon-important_mail.svg" alt="Icono Mail"></a>
+                <a target="_blank" class="button-icon" href="https://www.instagram.com/mauriciolaratro/">
+                <img src="./icons/icon-instagram.svg" alt="Icono de Instagram"></a>
+                <a target="_blank" class="button-icon" href="https://github.com/MauricioLaratro">
+                <img src="./icons/icon-github.svg" alt="Icono de Github"></a>
+            </div>
+            <div class="footer-copyright">
+                <p>Hecho con el ❤ por Mauricio. </p>
+                <p>Copyright 2022 - Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </div>
+
+    <script>
+        const $form = document.querySelector('#form')
+
+        $form.addEventListener('submit', handleSubmit)
+
+        async function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            if (response.ok) {
+                this.reset()
+                alert('Gracias por contactarme, te escribiré pronto.')
+            }
+        }
+    </script>
+
 </body>
 </html>
